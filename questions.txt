@@ -1,0 +1,11 @@
+Typical C Program Development Environment:
+
+Phase 1: Editing       - Programmer creates a program by entering codes. The editor stores it on the hard disk.
+Phase 2: Preprocessing - The preprocessor's program runs automatically before the compiler's translation phase begins.
+                         The preprocessor processes the code entered by the programmer.
+Phase 3: Compiling     - Compiler creates the object code (or machine language code) and stores it on the disk.
+Phase 4: Linking       - The object code usually contains many 'holes'. The linker connects the object code to the
+                         libraries for the missing functions to create an executable file.
+Phase 5: Loading       - The loader takes the executable image from disk and transfers it to the memory so that the 
+                         program can be executed.
+Phase 6: Execution     - Finally, the computer, under control of CPU executes the program, one instruction at a time.
