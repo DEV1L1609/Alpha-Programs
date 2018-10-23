@@ -2,27 +2,27 @@
 
 struct tri
 {
-  int b, h, ar;
+  float b, h, ar;
 } a;
 
-int
-tri (int base, int height)
+float
+tri (float base, float height)
 {
   a.ar = ((base * height) / 2);
   return (a.ar);
 }
 
-int
+float
 main ()
 {
-  int b, h, ar;
+  float b, h, ar;
 
   printf ("Enter the value of the base \n");
-  scanf ("%d", &b);
+  scanf ("%f", &b);
   printf ("Enter the value of the height \n");
-  scanf ("%d", &h);
+  scanf ("%f", &h);
 
   ar = tri (b, h);
-  printf ("The area of the given triangle is %d\n", ar);
+  printf ("The area of the given triangle is %f\n", ar);
 
 }
