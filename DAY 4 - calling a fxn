@@ -1,21 +1,24 @@
 #include <stdio.h>
 
-int tri(int b, int h)
 {
-return (b*h)/2;
- 
+  int tri (int b, int h)
+  {
+    return (b * h) / 2;
+  }
 }
 
-int main()
 {
+  int main ()
+  {
     int b, h, a;
-    
-    printf("Enter the value of the base \n");
-    scanf("%d", &b);
-    printf("Enter the value of the height \n");
-    scanf("%d", &h);
-    
-    a = tri (b,h);
-    printf("The area of the given triangle is %d\n", a);
-    
+
+    printf ("Enter the value of the base \n");
+    scanf ("%d", &b);
+    printf ("Enter the value of the height \n");
+    scanf ("%d", &h);
+
+    a = tri (b, h);
+    printf ("The area of the given triangle is %d\n", a);
+
+  }
 }
