@@ -1,22 +1,24 @@
 #include <stdio.h>
 
-struct tri{
-    int b;
-    int h;
-    int ar;
-}a;
-
-int main()
+struct tri
 {
-    printf("Enter the value of the base here \n");
-    scanf("%d",&a.b);
-    
-    printf("Enter the value of the height here \n");
-    scanf("%d",&a.h);
-    
-    a.ar=((a.b* a.h)/2);
-    
-    printf("The area of the given triangle is %d", a.ar);
-    
-    
+  int b;
+  int h;
+  int ar;
+} a;
+
+int
+main ()
+{
+  printf ("Enter the value of the base here \n");
+  scanf ("%d", &a.b);
+
+  printf ("Enter the value of the height here \n");
+  scanf ("%d", &a.h);
+
+  a.ar = ((a.b * a.h) / 2);
+
+  printf ("The area of the given triangle is %d", a.ar);
+
+
 }
