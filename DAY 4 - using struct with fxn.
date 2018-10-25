@@ -15,14 +15,13 @@ tri (float base, float height)
 float
 main ()
 {
-  float b, h, ar;
 
   printf ("Enter the value of the base \n");
-  scanf ("%f", &b);
+  scanf ("%f", &a.b);
   printf ("Enter the value of the height \n");
-  scanf ("%f", &h);
+  scanf ("%f", &a.h);
 
-  ar = tri (b, h);
-  printf ("The area of the given triangle is %f\n", ar);
+  a.ar = tri (a.b, a.h);
+  printf ("The area of the given triangle is %f\n", a.ar);
 
 }
