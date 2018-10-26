@@ -13,14 +13,15 @@ int sum(int a[], int n)
 
 int main (void)
 {
-  int a[SIZE];
+  int a[S];
   int n;
+  int b;
   for (int i=0; i<n; i++)
   {
      
-     printf("Enter the first n integers here\n");
-      scanf("%d", &a[i]);
-      
+     printf("Enter the array value\n");
+      scanf("%d", &b);
+      a[i] = b;
   }       
   
 }
