@@ -1,35 +1,68 @@
 #include <stdio.h>
 #define S 12
+
 int
-sum (int a[], int n)
+
+f_sum (int a[], int n)
+
 {
-  int sum = 0;
+
+  int v_sum = 0;
+
   int i;
+
   for (i = 0; i < n; i++)
+
     {
-      sum = sum + a[i];
+
+      v_sum = v_sum + a[i];
+
     }
-  return sum;
+
+  return v_sum;
+
 }
 
+
+
 int
+
 main (void)
+
 {
+
   int a[S];
+
   int n;
+
   int b;
 
+
+
   printf ("Enter the value of no. of elements in array\n");
+
   scanf ("%d", &n);
 
-  for (int i = 0; i < n; i++)
-    {
-      printf ("Enter the array value\n");
-      scanf ("%d", &b);
-      a[i] = b;
-    }
-  int to;
-  to = sum (a[n], n);
 
-  printf ("The sum of n integers is\n", to);
+
+  for (int i = 0; i < n; i++)
+
+    {
+
+      printf ("Enter the array value\n");
+
+      scanf ("%d", &b);
+
+      a[i] = b;
+
+    }
+
+  int v_to;
+
+  v_to = f_sum (a, n);
+
+
+
+  printf ("The sum of n integers is %d\n", v_to);
+
 }
