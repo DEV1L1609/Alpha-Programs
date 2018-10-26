@@ -1,23 +1,26 @@
 #include <stdio.h>
-#define S 12
-int sum(int S; int i)
+#define SIZE 12
+int sum(int a[], int n)
 {
-    int a[ S ];
-    size_t i;
-    int total=0;
-    for (i=0; i<S; i++)
+    int sum = 0;
+    int i;
+    for (i=0;i<n;i++)
     {
-        int total = total + a[i];
+        sum = sum + a[i];
+        return sum;
     }
 }
-int main(void)
+
+int main (void)
 {
-    int j=0;
-    int n;
-    for (j=0, j<n, j++)
-    {
-        printf ("%7u%13d\n", j, a[j]);
-    }
-    
-    
+  int a[SIZE];
+  int n;
+  for (int i=0; i<n; i++)
+  {
+     
+     printf("Enter the first n integers here\n");
+      scanf("%d", &a[i]);
+      
+  }       
+  
 }
