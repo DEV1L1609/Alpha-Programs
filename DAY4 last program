@@ -1,37 +1,66 @@
 #include<stdio.h>
-#include<conio.h>
-typedef struct
+
+struct fraction{
+	int num;
+	int den;
+};
+int i;
+
+
+void input()
+ { fraction s;
+     for(int n=0,n<=i;n++)
      {
-        int num;
-        int deno;
-     
-      }Fract;
- 
-   Fract sum(Fract,Fract);
- 
-   int main()
-    {
-     int i,n;
-     Fract a[i];
-     printf("enter the size of the array \n");
-     scanf("%d", &n);
-     for(i=0;i<n;i++)
-     {
-         
+        printf("Enter the value of the numerator");
+        scanf("%d", &s[n].num);
+        printf("Enter the value of the denominator");
+        scanf("%d", &s[n].den);
+        
      }
-     
-    
-     Fract f1={num1, deno1}; // fraction 1
-     Fract f2 ={num2, deno2};//fraction 2
-     Fract result = sum(f1, f2);//sum the fractions
-     printf("Result=%d/%d",result.num,result.deno);  //display the result
- 
-     getch();
-     return 0;
-    }
-   Fract sum(Fract f1, Fract f2)
-    {
-     Fract result={(f1.num * f2.deno) + (f2.num * f1.deno), f1.deno * f2.deno};
-     return result;
- 
-   }
+  printf("Enter the numerator of the first fraction\n");
+  scanf("%d",&f1->num);
+  printf("Enter the denominator of the first fraction\n");
+  scanf("%d",&f1->den);
+  printf("Enter the numerator of the second fraction\n");
+  scanf("%d",&f2->num);
+  printf("Enter the denominator of the second fraction\n");
+  scanf("%d",&f2->den);
+  return 0;
+ }
+
+int sum_of_fractions(struct fraction *result,struct fraction f1,struct fraction f2)
+ {
+  result->den = (f1.den)*(f2.den);
+  result->num = ((f1.num)*(f2.den))+((f1.den)*(f2.num));
+  return 0;
+ }
+void sum_of_fractions()
+{ int m=0;
+  
+  for(m=0,m<=i;m++)
+  {
+      
+  
+    result->den = (s[n].den)*(s[n+1].den);
+    result->num = ((f1.num)*(f2.den))+((f1.den)*(f2.num));
+  }
+}
+
+int output(struct fraction result) 
+ {
+  printf("\nThe sum of the fractions is: %d/%d\n",result.num,result.den);
+  return 0; 
+ }
+
+int main()
+ {
+     int i;
+     printf("Enter value of no. of elements in array");
+     scanf("%d,i");
+     fraction s[i];
+  struct fraction f1,f2,result;
+  int input(&f1,&f2);
+  sum_of_fractions(&result,f1,f2);
+  output(result);
+  return 0;
+ }
