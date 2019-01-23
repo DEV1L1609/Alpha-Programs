@@ -1,66 +1,54 @@
 #include<stdio.h>
 
-struct fraction{
-	int num;
-	int den;
+struct fract
+{
+  int num;
+  int den;
 };
-int i;
 
 
-void input()
- { fraction s;
-     for(int n=0,n<=i;n++)
-     {
-        printf("Enter the value of the numerator");
-        scanf("%d", &s[n].num);
-        printf("Enter the value of the denominator");
-        scanf("%d", &s[n].den);
-        
-     }
-  printf("Enter the numerator of the first fraction\n");
-  scanf("%d",&f1->num);
-  printf("Enter the denominator of the first fraction\n");
-  scanf("%d",&f1->den);
-  printf("Enter the numerator of the second fraction\n");
-  scanf("%d",&f2->num);
-  printf("Enter the denominator of the second fraction\n");
-  scanf("%d",&f2->den);
-  return 0;
- }
+int
+stor (int j)
+{
 
-int sum_of_fractions(struct fraction *result,struct fraction f1,struct fraction f2)
- {
-  result->den = (f1.den)*(f2.den);
-  result->num = ((f1.num)*(f2.den))+((f1.den)*(f2.num));
-  return 0;
- }
-void sum_of_fractions()
-{ int m=0;
-  
-  for(m=0,m<=i;m++)
-  {
-      
-  
-    result->den = (s[n].den)*(s[n+1].den);
-    result->num = ((f1.num)*(f2.den))+((f1.den)*(f2.num));
-  }
+  struct fract s;
+  for (int m = 0; m < j; m++)
+    {
+      printf ("Enter the value of the numerator");
+      scanf ("%d", &s.num);
+      printf ("Enter the value of the denominator");
+      scanf ("%d", &s.den);
+
+    }
+
 }
 
-int output(struct fraction result) 
- {
-  printf("\nThe sum of the fractions is: %d/%d\n",result.num,result.den);
-  return 0; 
- }
+int
+sum ( int j)
+{
+  struct fract s[j];
+  int m;
+  struct fract res;
+  for (m = 0; m < j; m++)
+    {
+      res.den = (s[m].den) * (res.den);
+      res.num = ((s[m].num) * res.den + ((s[m].den) * res.num));
 
-int main()
- {
-     int i;
-     printf("Enter value of no. of elements in array");
-     scanf("%d,i");
-     fraction s[i];
-  struct fraction f1,f2,result;
-  int input(&f1,&f2);
-  sum_of_fractions(&result,f1,f2);
-  output(result);
-  return 0;
- }
+    }
+}
+
+int
+main ()
+{
+  int j;
+
+  printf ("Enter the number of fractions needed\n");
+
+  scanf ("%d", &j);
+
+  int stor (j);
+  int sum (j);
+  struct fract res;
+  printf ("Sum of the fractions is : %d/%d", &res.num, &res.num);
+
+}
