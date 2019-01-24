@@ -28,27 +28,26 @@ sum ( int j)
 {
   struct fract s[j];
   int m;
-  struct fract res;
+    struct fract res;
   for (m = 0; m < j; m++)
     {
       res.den = (s[m].den) * (res.den);
       res.num = ((s[m].num) * res.den + ((s[m].den) * res.num));
 
     }
+    return res.num, res.den;
 }
 
 int
 main ()
 {
   int j;
-
+   struct fract res; 
   printf ("Enter the number of fractions needed\n");
-
   scanf ("%d", &j);
 
-  int stor (j);
-  int sum (j);
-  struct fract res;
-  printf ("Sum of the fractions is : %d/%d", &res.num, &res.num);
-
+  stor (j);
+  sum (j);
+  printf ("Sum of the fractions is : %d/%d", &res.num, &res.den);
+return 0;
 }
