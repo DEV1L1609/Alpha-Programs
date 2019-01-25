@@ -24,7 +24,7 @@ stor (int j)
       printf ("Enter the value of the denominator\n");
       scanf ("%d", &s[m].den);
     }
-  return s[j];
+  return s[];
 }
 
 struct fract
@@ -46,8 +46,10 @@ main ()
 {
    int x;
   int y=input (x);
-  stor (y);
-  struct fract ans = sum (s[],y);
+  struct fract *s[y];
+  s[] = stor (y);
+  
+  struct fract ans = sum (s,y);
   printf ("Sum of the fractions is : %d/%d", &ans.num, &ans.den);
   
 }
