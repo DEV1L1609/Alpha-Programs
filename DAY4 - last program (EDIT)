@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+struct fract
+{
+  int num;
+  int den;
+};
+
+int input (int y)
+{
+   printf ("Enter the number of fractions needed\n");
+   scanf ("%d", &y);  
+   return y;
+}
+struct fract
+stor (int j)
+{
+    
+  struct fract s[j];
+  for (int m = 0; m < j; m++)
+    {
+      printf ("Enter the value of the numerator\n");
+      scanf ("%d", &s[m].num);
+      printf ("Enter the value of the denominator\n");
+      scanf ("%d", &s[m].den);
+    }
+  return s[j];
+}
+
+struct fract
+sum (struct fract s[],int j)
+{
+  int m;
+  struct fract res;
+  for (m = 0; m < j; m++)
+    {
+      res.den = (s[m].den) * (res.den);
+      res.num = ((s[m].num) * res.den + ((s[m].den) * res.num));
+
+    }
+    return res;
+}
+
+int
+main ()
+{
+   int x;
+  int y=input (x);
+  stor (y);
+  struct fract ans = sum (s[],y);
+  printf ("Sum of the fractions is : %d/%d", &ans.num, &ans.den);
+  
+}
