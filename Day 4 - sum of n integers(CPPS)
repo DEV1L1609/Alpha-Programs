@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int input ()
+{ int x;
+  printf("Enter the number of values required\n");
+  scanf("%d", &x);
+  return x;
+}
+ int store (int i)
+{ 
+   
+  int a[i];
+  for (int m=0; m<i; m++)
+  {
+   printf("Enter an integer\n");
+   scanf("%d", &a[m]);
+  }
+  return a[];
+}
+ int sum (int i)
+{
+ for (int m=0; m<i; m++)
+ {
+  int sum = sum + ptr;
+ }
+  return sum;
+}
+void output()
+{
+ printf("The sum of the integers is %d\n", sum);
+}
+
+int main()
+{
+ int n=input;
+ int *ptr=store(n);
+ sum(ptr);
+ output();
+}
