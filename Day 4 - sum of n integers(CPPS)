@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 int input ()
 { int x;
@@ -6,34 +6,33 @@ int input ()
   scanf("%d", &x);
   return x;
 }
- int store (int i)
+int store (int i, int *a[i])
 { 
    
-  int a[i];
   for (int m=0; m<i; m++)
   {
    printf("Enter an integer\n");
-   scanf("%d", &a[m]);
+   scanf("%d", &*a[m]);
   }
-  return a[];
+  return *a[i];
 }
- int sum (int i)
-{
+int sum (int i, int g)
+{ int s;
  for (int m=0; m<i; m++)
  {
-  int sum = sum + ptr;
+  s = s + g;
  }
-  return sum;
+  return s;
 }
-void output()
+void output(int sum)
 {
  printf("The sum of the integers is %d\n", sum);
 }
 
 int main()
-{
+{int tot,g;
  int n=input;
- int *ptr=store(n);
- sum(ptr);
- output();
+ store(n) = g;
+ sum(n,g) = tot;
+ output(tot);
 }
