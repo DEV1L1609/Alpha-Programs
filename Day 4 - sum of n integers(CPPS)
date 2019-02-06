@@ -16,8 +16,9 @@ int store(int i, int a[i])
     }
     int *s = &a[0];
     return *s;
+    
 }
-int compute(int i; int *g)
+int compute(int i, int *g)
 {
     int sum;
     for(sum=0;*g;*g++)
@@ -38,4 +39,4 @@ int main()
     int y = compute(b, *p); 
     output(y);
 } 
-    
+       
