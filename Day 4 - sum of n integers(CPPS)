@@ -1,39 +1,41 @@
 #include <stdio.h>
-int input(int n)
+int input()
 {
- printf("Enter the no. of values required\n");
- scanf("%d", &n);
- return n;
+    int n;
+    printf("Enter the no. of integers required");
+    scanf("%d", &n);
+    return n;
 }
-int store(int i; int a[i])
+int store(int i, int a[i])
 {
- int m;
- for (m=0; m<i; m++)
- { 
-  printf("Enter the integer\n");
-  scanf("%d", &a[i]);
- }
-int *s = a[i];
-return *s;
+    int m;
+    for(m=0;m<i;m++)
+    {
+        printf("Enter the integer");
+        scanf("%d", &a[m]);
+    }
+    int *s = &a[0];
+    return *s;
 }
-int compute(int i)
+int compute(int i; int *g)
 {
- int m,sum;
- for (m=0; m<i; m++)
- {
-  sum = sum + m;
- }
-return sum;
+    int sum;
+    for(sum=0;*g;*g++)
+    {
+        sum = sum + *g;
+    }
+    return sum;
 }
-int output(int y)
-{ 
- printf("The sum of the integers is %d\n", y);
+int output(int x)
+{
+    printf("The sum of the integers is %d", x);
 }
 int main()
 {
- int a;
- int b = input(a);
- int *g = store(b);
- int x = compute(*g);
- output (x);
-}
+    int a[100];
+    int b = input();
+    int *p = store(b, a[b]);
+    int y = compute(b, *p); 
+    output(y);
+} 
+    
