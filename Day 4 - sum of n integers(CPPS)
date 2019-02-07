@@ -2,28 +2,25 @@
 int input()
 {
     int n;
-    printf("Enter the no. of integers required");
+    printf("Enter the no. of elements required\n");
     scanf("%d", &n);
     return n;
 }
-int store(int i, int a[i])
+void store(int n, int a[n])
 {
-    int m;
-    for(m=0;m<i;m++)
+    int i;
+    for(i=0; i<n; i++)
     {
-        printf("Enter the integer");
-        scanf("%d", &a[m]);
+        printf("Enter an integer\n");
+        scanf("%d", &a[i]);
     }
-    int *s = &a[0];
-    return *s;
-    
 }
-int compute(int i, int *g)
+int compute(int n, int a[n])
 {
-    int sum;
-    for(sum=0;*g;*g++)
-    {
-        sum = sum + *g;
+    int sum=0;
+    for(int i=0; i<n; i++)
+    { 
+        sum = sum + a[i];
     }
     return sum;
 }
@@ -31,12 +28,11 @@ int output(int x)
 {
     printf("The sum of the integers is %d", x);
 }
-int main()
+void main()
 {
-    int a[100];
-    int b = input();
-    int *p = store(b, a[b]);
-    int y = compute(b, *p); 
-    output(y);
-} 
-       
+    int y = input();
+    int a[y];
+    store(y,a);
+    int k = compute(y,a);
+    output(k);
+}
