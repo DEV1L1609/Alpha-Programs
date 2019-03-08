@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+struct fract
+{
+    int num;
+    int den;
+};
+
+void input(struct fract *a,struct fract *b)
+{
+    printf("Enter numerator and denominator for 1st fraction:\n");
+    scanf("%d%d", &a->num, &a->den);
+    printf("Enter numerator and denominator for 2nd fraction:\n");
+    scanf("%d%d", &b->num, &b->den);
+}
+
+void compute(struct fract *a,struct fract *b,struct fract *res)
+{
+    res->num = a->num*b->den + b->num*a->den;
+    res->den = a->den*b->den;
+}
+
+void output(struct fract res)
+{
+    if (res.den==0)
+    {
+        printf("The sum of the 2 fractions is undefined");
+    }
+    else
+    {
+        printf("The sum of the 2 fractions is %d/%d", res.num, res.den);
+    }
+}
+
+void main()
+{
+    struct fract x;
+    struct fract y;
+    struct fract res;
+    input(&x, &y);
+    compute(&x, &y, &res);
+    output(res);
+}
