@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void input(int *a, int *b, int *c)
+{
+    printf("Enter 3 numbers\n");
+    scanf("%d%d%d", &*a,&*b,&*c);
+}
+
+int compute(int *a, int *b, int *c)
+{
+    return ((a<b) ? ((a<c) ? *a : *c) : ((b<c) ? *b : *c));
+}    
+void output(int n)
+{
+    printf("%d is the minimum value", n);
+}
+void main()
+{   
+    int a,b,c,n;
+    input(&a,&b,&c);
+    n = compute(&a,&b,&c);
+    output(n);
+}
