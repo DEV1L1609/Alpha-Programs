@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+void input(int *a, int *b, int *c)
+{
+    printf("Enter 3 numbers\n");
+    scanf("%d%d%d", &*a,&*b,&*c);
+}
+
+int compute(int *a, int *b, int *c)
+{
+    if(a<b)
+    {
+        if(a<c)
+            {
+                return *a;
+            }
+    }
+    else if(b<c)
+    {
+        if(b<a)
+            {
+                return *b;
+            }
+    }
+    else if(c<a)
+    {
+        if(c<b)
+            {
+                return *c;
+            }
+    }
+}
+void output(int n)
+{
+    printf("%d is the minimum value", n);
+}
+void main()
+{   
+    int a,b,c,n;
+    input(&a,&b,&c);
+    n = compute(&a,&b,&c);
+    output(n);
+}
